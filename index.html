@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Didi</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Video background styling */
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Main content styling */
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5); /* Optional dark overlay for contrast */
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .layout {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      max-width: 1200px;
+    }
+
+    .left, .right {
+      flex: 1;
+      margin: 20px;
+    }
+
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px dashed white;
+      height: 300px; /* Adjust height as needed */
+    }
+
+    .left img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .right {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background video -->
+  <video class="background-video" autoplay loop muted>
+    <source src="snowrecording.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>Happy Birthday Didi</h1>
+    <div class="layout">
+      <div class="left">
+        <!-- Placeholder for photo -->
+        <img src="placeholder.jpg" alt="Your Photograph">
+      </div>
+      <div class="right">
+        <p>
+          Dear Didi, wishing you the happiest of birthdays! May this year bring you endless joy,
+          success, and love. Celebrate this special day to the fullest—you deserve it!
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
